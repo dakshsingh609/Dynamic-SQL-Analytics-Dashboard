@@ -1,0 +1,33 @@
+Connect to Database
+
+Enter PostgreSQL connection details in the sidebar.
+
+Click "Connect to Database".
+
+Explore Tables
+
+View table names and row counts.
+
+Start analysis in one of the three tabs:
+
+Single Table Analysis
+
+Cross-Table Analysis
+
+Filtered Data & Exports
+
+Apply Filters
+
+Use the Apply Filters expander to select values, ranges, or dates.
+
+View KPIs
+
+Automatically computed totals, sums, averages, etc., based on your filtered data.
+
+Generate Charts
+
+Choose from automatically suggested visualization types.
+
+Export Results
+
+Download your filtered view as CSV or Excel.
