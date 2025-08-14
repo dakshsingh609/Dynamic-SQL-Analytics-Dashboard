@@ -1,0 +1,3 @@
+app.py                # Main Streamlit app file
+requirements.txt      # Python dependencies
+README.md             # Project documentation
