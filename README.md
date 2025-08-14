@@ -1,2 +1,36 @@
 # Dynamic SQL Analytics Dashboard
-The provided code is for a Dynamic SQL Analytics Dashboard built using Streamlit, designed to connect to any PostgreSQL database and perform interactive data exploration and analysis. Here's a brief summary:  Database Connectivity: Users input PostgreSQL connection details (host, database name, user, password, port) to connect. Upon connection, the dashboard fetches and caches the list of tables, schemas, row counts, and foreign key relationships.  Table and Relationship Detection: The app auto-discovers database tables and their schemas, including foreign key relationships and infers additional possible relationships based on common column names and compatible data types.  Tabs for Different Analyses:  Single Table Analysis: Select a single table to preview data, apply flexible filters (including categorical selections, numeric ranges, date ranges), paginate data, view automatically-generated KPIs (like counts, sums, averages), and create smart visualizations based on the table’s data types.  Cross-Table Analysis: Automatically performs SQL joins between tables based on detected relationships and provides a similar interface of filtering, paginating, KPI calculation, and visualizations on the joined dataset.  Filtered Data and Exports: Displays the filtered/paginated dataset from either tab and allows exporting the current view as CSV or Excel.  Data Handling & Performance: Uses caching to reduce redundant database queries, supports loading filtered and paginated data on demand, and samples large datasets to keep visualizations responsive.  Visualization: Integrates Plotly Express for interactive charts including bar plots, pie charts, line charts, scatter plots, histograms, stacked bars, and donut charts. Chart suggestions are based on detected data types (numeric, categorical, datetime).  User Experience: The interface includes expandable filter panels, pagination controls, and dynamic KPIs that update based on current filters, all organized with tabs for intuitive navigation.  Overall, this dashboard offers a versatile, user-friendly, and dynamic SQL-driven analytics environment to explore, filter, aggregate, visualize, and export data from any connected PostgreSQL database.
+A Streamlit-based interactive analytics dashboard that allows you to connect to any PostgreSQL database, explore tables, filter data dynamically, auto-detect relationships, compute KPIs, and generate smart visualizations — all without writing SQL manually.
+
+Features
+
+Easy DB Connection — Connect to any PostgreSQL database via UI (no code changes needed).
+
+Table and Schema Exploration — Automatically fetches table names, row counts, and column types.
+
+Relationship Detection — Auto-detects foreign key and inferred relationships between tables.
+
+Single Table Analysis — Apply advanced filters, view paginated data, and generate KPIs.
+
+Cross-Table Analysis — Auto-joins multiple tables based on relationships for combined analysis.
+
+Smart Visualizations — Automatically suggests and generates:
+
+Bar Charts
+
+Pie and Donut Charts
+
+Line Charts (time trends)
+
+Scatter Plots
+
+Histograms
+
+Stacked Bar Charts
+
+KPIs — Auto-generates relevant KPIs based on column type and name heuristics.
+
+Data Export — Export filtered views to CSV or Excel.
+
+Optimized Performance — Uses caching (st.cache_data) for table metadata and repeated queries.
+
+Interactive Data Tables — Supports st_aggrid if installed, for advanced table features.
