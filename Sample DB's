@@ -1,0 +1,16 @@
+# PostgreSQL Database Configuration
+1st Sample 
+DB_HOST= localhost
+DB_PORT= 5432
+DB_NAME= test5final
+DB_USER= postgres
+DB_PASSWORD= Noddy@2003
+
+2nd Sample
+DB_HOST= localhost
+DB_PORT= 5432
+DB_NAME= car_parking_analytics
+DB_USER= postgres
+DB_PASSWORD= Noddy@2003
+
+
