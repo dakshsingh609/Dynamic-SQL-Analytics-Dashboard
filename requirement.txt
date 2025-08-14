@@ -1,0 +1,6 @@
+streamlit
+pandas
+psycopg2
+plotly
+st-aggrid   # Optional, for enhanced tables
+openpyxl    # For Excel export
